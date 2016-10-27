@@ -6,7 +6,7 @@ node {
         checkout scm
 
         sh "ls -al"
+        sh "pwd"
         sh "export ANDROID_HOME=“/opt/android-sdk-linux"
-        sh "echo $ANDROID_HOME"
     }
 }
