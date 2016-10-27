@@ -1,16 +1,10 @@
-
 #!/usr/bin/env groovy
 
 node {
-  stage 'Checkout'
-  checkout scm
+    stage 'Build and Deploy'
+    docker.image('dr.gopaktor.com/paktor/build-image:latest').inside {
+        checkout scm
 
-  ws (pwd() + '/docker-build-android') {
-    stage 'Build Image'
-        def img = docker.build "dr.gopaktor.com/paktor/build-android:${env.BUILD_NUMBER}"
-
-    stage 'Publish'
-  	    img.push()
-  	    img.push('latest')
-  }
+        sh "ls -al"
+    }
 }
