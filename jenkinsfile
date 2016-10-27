@@ -7,8 +7,7 @@ node {
 
         sh "ls -al"
         sh "pwd"
-        sh "ls -al opt/android-sdk-linux"
         sh "export ANDROID_HOME=“/opt/android-sdk-linux"
-        sh "./gradlew assembleDebug"
+        sh "docker run dr.gopaktor.com/paktor/build-android:latest ls -al /opt/android-sdk-linux"
     }
 }
