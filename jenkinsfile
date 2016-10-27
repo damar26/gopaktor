@@ -2,7 +2,7 @@
 
 node {
     stage 'Build and Deploy'
-    docker.image('dr.gopaktor.com/paktor/build-image:latest').inside {
+    docker.image('dr.gopaktor.com/paktor/build-android:latest').inside {
         checkout scm
 
         sh "ls -al"
