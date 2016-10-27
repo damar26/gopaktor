@@ -8,5 +8,6 @@ node {
         sh "ls -al"
         sh "pwd"
         sh "export ANDROID_HOME=“/opt/android-sdk-linux"
+        sh "docker run -it dr.gopaktor.com/paktor/build-android:latest gcloud init"
     }
 }
