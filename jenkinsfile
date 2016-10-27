@@ -7,6 +7,6 @@ node {
 
         sh "ls -al"
         sh "export ANDROID_HOME=“/opt/android-sdk-linux"
-        sh "echo $PATH"
+        sh "echo $ANDROID_HOME"
     }
 }
