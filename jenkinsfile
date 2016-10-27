@@ -7,7 +7,6 @@ node {
 
         sh "ls -al"
         sh "pwd"
-        sh "export ANDROID_HOME=“/opt/android-sdk-linux"
-        sh "docker run dr.gopaktor.com/paktor/build-android:latest ls -al /opt/android-sdk-linux"
+        sh "export ANDROID_HOME=/opt/android-sdk-linux
     }
 }
