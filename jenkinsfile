@@ -8,6 +8,5 @@ node {
         sh "ls -al"
         sh "pwd"
         sh "export ANDROID_HOME=“/opt/android-sdk-linux"
-        sh "gcloud --h"
     }
 }
