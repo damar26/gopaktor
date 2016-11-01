@@ -8,8 +8,8 @@ node {
         sh "ls -al"
         sh "pwd"
         sh "export ANDROID_HOME=/opt/android-sdk-linux"
+        sh "export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH""
         sh "export JAVA_HOME=/usr/bin/java"
-        sh "./gradlew assembleDebug"
         sh "java -version"
     }
 }
