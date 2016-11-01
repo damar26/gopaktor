@@ -9,8 +9,7 @@ node {
         sh "pwd"
         sh "export ANDROID_HOME=/opt/android-sdk-linux"
         sh "export JAVA_HOME=/usr/bin/java"
-        sh "java -version"
-        sh "which java"
         sh "./gradlew assembleDebug"
+        sh "java -version"
     }
 }
