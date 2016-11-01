@@ -10,7 +10,7 @@ node {
         sh "export ANDROID_HOME=/opt/android-sdk-linux"
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
-        sh "touch ~/.gradle/gradle.properties && echo "org.gradle.daemon=true" >> ~/.gradle/gradle.properties"
+        sh "touch ~/.gradle/gradle.properties && echo \"org.gradle.daemon=true"\ >> ~/.gradle/gradle.properties"
         sh "./gradlew clean"
     }
 }
