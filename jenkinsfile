@@ -12,6 +12,6 @@ node {
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
         sh "android list sdk"
-        #sh "./gradlew clean"
+        //sh "./gradlew clean"
     }
 }
