@@ -12,8 +12,9 @@ node {
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
         sh "android list sdk"
-        sh "./gradlew assembleDebug"
-        sh "echo y | sudo android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
+        sh "gcloud --help"
+        //sh "./gradlew assembleDebug"
+        //sh "echo y | sudo android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
 
     }
 }
