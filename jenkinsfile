@@ -11,6 +11,7 @@ node {
         sh "ls -al /opt/android-sdk-linux/platform-tools"
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
-        sh "./gradlew clean"
+        sh "android list sdk"
+        #sh "./gradlew clean"
     }
 }
