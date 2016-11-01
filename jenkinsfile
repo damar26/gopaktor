@@ -12,7 +12,7 @@ node {
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
         sh "android list sdk"
-        sh "./gradlew clean"
+        sh "./gradlew clean --debug"
         sh "echo y | sudo android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
 
     }
