@@ -13,6 +13,6 @@ node {
         sh "java -version"
         sh "android list sdk"
         sh "echo y | android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
-        //sh "./gradlew clean"
+        sh "./gradlew clean"
     }
 }
