@@ -8,8 +8,9 @@ node {
         sh "ls -al"
         sh "pwd"
         sh "export ANDROID_HOME=/opt/android-sdk-linux"
+        sh "ls -al /opt/android-sdk-linux"
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
-        sh "./gradlew clean"
+        ##sh "./gradlew clean"
     }
 }
