@@ -16,6 +16,7 @@ node {
         sh "adb version"
         sh "./gradlew -version"
         sh "./gradlew clean"
+        sh "./gradlew assembleDebug"
         //sh "gcloud auth activate-service-account modular-glider-366@appspot.gserviceaccount.com --key-file Paktor-0003db16ce61.p12 --project modular-glider-366"
         //sh "./gradlew assembleDebug"
         //sh "echo y | android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
