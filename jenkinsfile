@@ -7,6 +7,8 @@ node {
 
         sh "ls -al"
         sh "pwd"
+        sh "mkdir .android"
+        sh "mv debug.keystore .android/"
         sh "export ANDROID_HOME=/opt/android-sdk-linux"
         sh "ls -al /opt/android-sdk-linux"
         sh "ls -al /opt/android-sdk-linux/build-tools"
