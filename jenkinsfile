@@ -12,9 +12,10 @@ node {
         sh "export JAVA_HOME=/usr/bin/java"
         sh "java -version"
         sh "android list sdk"
-        sh "gcloud auth activate-service-account modular-glider-366@appspot.gserviceaccount.com --key-file Paktor-0003db16ce61.p12 --project modular-glider-366"
+        sh "adb"
+        //sh "gcloud auth activate-service-account modular-glider-366@appspot.gserviceaccount.com --key-file Paktor-0003db16ce61.p12 --project modular-glider-366"
         //sh "./gradlew assembleDebug"
-        //sh "echo y | sudo android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
+        //sh "echo y | android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
 
     }
 }
