@@ -17,7 +17,7 @@ node {
         sh "java -version"
         sh "android list sdk"
         sh "adb version"
-
+        sh "gcloud init"
         sh "gcloud auth activate-service-account modular-glider-366@appspot.gserviceaccount.com --key-file Paktor-0003db16ce61.p12 --project modular-glider-366"
 
     }
