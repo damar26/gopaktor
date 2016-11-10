@@ -7,9 +7,10 @@ node {
 
         sh "ls -al"
         sh "pwd"
-        sh "keytool -genkey -v -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US' -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android"
+        //sh "keytool -genkey -v -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US' -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android"
         //sh "ls -al"
         //sh "ls -al .android/"
+        sh "mv debug.keystore ?/.android/"
         sh "ls -al ?/.android/"
         //sh "mv .android/debug.keystore ?/.android/"
         //sh "mkdir .android"
