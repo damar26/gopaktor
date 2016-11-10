@@ -24,7 +24,7 @@ node {
         sh "adb version"
         sh "./gradlew -version"
         sh "./gradlew assembleDebug"
-        sh "ls -al /app/build/outputs/apk"
+        sh "ls -al /app/build/"
 
         //sh "keytool -genkey -v -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US' -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android"
         //sh "./gradlew assembleDebug"
