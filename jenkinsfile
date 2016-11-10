@@ -20,7 +20,8 @@ node {
         sh "adb version"
         sh "./gradlew -version"
         sh "./gradlew assembleDebug"
-        sh "ls -al app/build/"
+        sh "ls -al app/build/outputs"
+        sh "ls -al app/build/outputs/apk"
 
         //sh "gcloud auth activate-service-account modular-glider-366@appspot.gserviceaccount.com --key-file Paktor-0003db16ce61.p12 --project modular-glider-366"
     }
