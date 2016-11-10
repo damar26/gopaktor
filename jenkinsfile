@@ -7,14 +7,10 @@ node {
 
         sh "ls -al"
         sh "pwd"
+        //execute it once
         //sh "keytool -genkey -v -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US' -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android"
-        //sh "ls -al"
-        //sh "ls -al .android/"
-        sh "mv debug.keystore ?/.android/"
+        //sh "mv debug.keystore ?/.android/"
         sh "ls -al ?/.android/"
-        //sh "mv .android/debug.keystore ?/.android/"
-        //sh "mkdir .android"
-        //sh "mv debug.keystore .android/"
         sh "export ANDROID_HOME=/opt/android-sdk-linux"
         sh "ls -al /opt/android-sdk-linux"
         sh "ls -al /opt/android-sdk-linux/build-tools"
@@ -26,11 +22,6 @@ node {
         sh "./gradlew assembleDebug"
         sh "ls -al /app/build/"
 
-        //sh "keytool -genkey -v -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US' -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android"
-        //sh "./gradlew assembleDebug"
         //sh "gcloud auth activate-service-account modular-glider-366@appspot.gserviceaccount.com --key-file Paktor-0003db16ce61.p12 --project modular-glider-366"
-        //sh "./gradlew assembleDebug"
-        //sh "echo y | android update sdk --no-ui --filter 4,5,tool,platform-tool,doc"
-
     }
 }
